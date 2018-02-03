@@ -1,0 +1,10 @@
+.main-section{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 50px;
+  padding-top: 100px;
+  @include mobile{
+    flex-direction: column;
+  };
+}

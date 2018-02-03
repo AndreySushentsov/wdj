@@ -1,0 +1,302 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #292929;
+}
+
+a {
+  text-decoration: none;
+}
+
+@-webkit-keyframes click-animation {
+}
+
+@keyframes click-animation {
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: #333;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1.5rem;
+  min-height: 60px;
+}
+
+.header a {
+  color: #fff;
+}
+
+.main-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  padding: 50px;
+  padding-top: 100px;
+}
+
+@media (max-width: 480px) {
+  .main-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.content {
+  width: 75%;
+  border: 1px solid #fff;
+  height: 100vh;
+  margin-right: 20px;
+}
+
+.sidebar {
+  border: 1px solid #fff;
+  height: 100vh;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.author-section {
+  background-color: #fff;
+  padding: 50px;
+}
+
+.popular-section {
+  background-color: #fff;
+  padding: 50px;
+  border-top: 2px solid #333;
+}
+
+.navigation {
+  width: 55%;
+  padding: 0 20px;
+}
+
+@media (max-width: 992px) {
+  .navigation {
+    display: none;
+  }
+}
+
+.navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.navigation ul li {
+  list-style-type: none;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+}
+
+.auth {
+  position: absolute;
+  right: 5%;
+}
+
+@media (max-width: 992px) {
+  .auth {
+    display: none;
+  }
+}
+
+.burger {
+  width: 25px;
+  height: 20px;
+  display: none;
+  position: fixed;
+  right: 5%;
+  top: 3%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.burger:hover {
+  cursor: pointer;
+}
+
+.burger span {
+  width: 100%;
+  height: 3px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  display: block;
+}
+
+.burger span:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.overlay-menu {
+  position: fixed;
+  height: 100vh;
+  width: 0;
+  left: -55%;
+  top: 0;
+  background-color: #fff;
+  -webkit-box-shadow: 0,0,12px black;
+          box-shadow: 0,0,12px black;
+  -webkit-box-shadow: 5px 0 5px -5px #333;
+          box-shadow: 5px 0 5px -5px #333;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.show {
+  left: 0;
+  width: 55%;
+}
+
+@media (max-width: 480px) {
+  .show {
+    width: 65%;
+  }
+}
+
+.jumbotron {
+  min-height: 300px;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, right top, from(#a5c044), to(#e37b78));
+  background: linear-gradient(bottom left, #a5c044 0%, #e37b78 100%);
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 5%;
+  padding-bottom: 5%;
+}
+
+.blue {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,207cca+20,2989d8+36,99c4e5+100 */
+  background: #1e5799;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #1e5799 0%, #207cca 20%, #2989d8 36%, #99c4e5 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#99c4e5',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+
+.form {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #fff;
+}
+
+.form-gorup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.form-gorup label {
+  width: 30%;
+}
+
+.admin-page {
+  background-color: #fff;
+}
+
+.tutorial__header {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.tutorial__image-wrapper {
+  min-height: 200px;
+  width: 65%;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.tutorial__image-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+}
+
+.tutorial__content {
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 40px;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+}
+
+.tutorial__content h2 {
+  margin: 30px 0;
+}
+
+.tutorial__content p,
+.tutorial__content code {
+  width: 90%;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+

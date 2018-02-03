@@ -1,0 +1,26 @@
+.navigation{
+  width: 55%;
+  padding: 0 20px;
+
+  @include laptop{
+  display: none;
+  }
+
+}
+.navigation ul{
+  display: flex;
+  flex-flow: row wrap;
+}
+.navigation ul li{
+  list-style-type: none;
+  flex-grow: 1;
+  text-align: center;
+}
+.auth{
+  position: absolute;
+  right: 5%;
+
+  @include laptop{
+  display: none;
+  }
+}

@@ -1,0 +1,19 @@
+.jumbotron{
+  min-height: 300px;
+  width: 100%;
+  background: linear-gradient(bottom left, rgb(165,192,68) 0%,rgb(227,123,120)100%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5%;
+  padding-bottom: 5%;
+}
+.blue{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,207cca+20,2989d8+36,99c4e5+100 */
+  background: rgb(30,87,153); /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(30,87,153,1) 0%, rgba(32,124,202,1) 20%, rgba(41,137,216,1) 36%, rgba(153,196,229,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(30,87,153,1) 0%,rgba(32,124,202,1) 20%,rgba(41,137,216,1) 36%,rgba(153,196,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(30,87,153,1) 0%,rgba(32,124,202,1) 20%,rgba(41,137,216,1) 36%,rgba(153,196,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#99c4e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}

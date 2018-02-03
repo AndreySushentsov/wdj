@@ -1,0 +1,19 @@
+.overlay-menu{
+
+  position: fixed;
+  height: 100vh;
+  width: 0;
+  left: -55%;
+  top: 0;
+  background-color: #fff;
+  box-shadow: 0,0,12px black;
+  box-shadow: 5px 0 5px -5px #333;
+  transition:0.2s ease-in-out;
+}
+.show{
+  left: 0;
+  width: 55%;
+  @include mobile{
+    width: 65%;
+  }
+}
